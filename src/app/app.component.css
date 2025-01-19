@@ -1,0 +1,60 @@
+.custom-navbar {
+    background-color: #f8f9fa; 
+    border-bottom: 2px solid #ddd; 
+  }
+  
+  .custom-navbar-brand {
+    font-size: 1.75rem;
+    font-weight: bold;
+    color: #f77bf5; 
+  }
+  
+  .custom-navbar-brand:hover {
+    color: #f77bf5;
+  }
+  
+  .custom-nav-link {
+    font-size: 1rem;
+    color: #555; 
+    transition: color 0.3s ease;
+  }
+  
+  .custom-nav-link:hover {
+    color: #f77bf5; 
+  }
+  
+  .custom-login-btn {
+    background-color: #28a745; 
+    color: white;
+    font-weight: bold;
+    padding: 8px 16px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .custom-login-btn:hover {
+    background-color: #218838; 
+  }
+  
+  .custom-dropdown-item {
+    color: #333;
+    padding: 8px 16px;
+  }
+  
+  .custom-dropdown-item:hover {
+    background-color: #f8f9fa;
+    color: #f77bf5;
+  }
+  
+  .navbar-toggler {
+    border: none;
+    outline: none;
+  }
+  
+  .navbar-toggler-icon {
+    background-color: #f77bf5;
+  }
+  .btn {
+    background-color: #f77bf5;
+
+  }

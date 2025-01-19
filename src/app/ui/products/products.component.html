@@ -1,0 +1,50 @@
+<div class="p-3">
+  <div class="card">
+    <div class="card-header">Products</div>
+    <div class="card-body">
+      <h2>Products</h2>
+      
+      <form (ngSubmit)="addProduct()">
+        <div class="mb-3">
+          <label for="productName" class="form-label">Product Name</label>
+          <input type="text" class="form-control" id="productName" [(ngModel)]="newProduct.name" name="productName" required>
+        </div>
+        <div class="mb-3">
+          <label for="description" class="form-label">Description</label>
+          <input type="text" class="form-control" id="description" [(ngModel)]="newProduct.description" name="description" required>
+        </div>
+        <div class="mb-3">
+          <label for="productPrice" class="form-label">Price</label>
+          <input type="number" class="form-control" id="productPrice" [(ngModel)]="newProduct.price" name="productPrice" required>
+        </div>
+        <div class="mb-3">
+          <label for="productQuantity" class="form-label">Quantity</label>
+          <input type="number" class="form-control" id="productQuantity" [(ngModel)]="newProduct.quantity" name="productQuantity" required>
+        </div>
+        <button type="submit" class="btn btn-primary">Add Product</button>
+      </form>
+
+      <table class="table mt-4">
+        <thead>
+          <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Price</th>
+            <th>Quantity</th>
+            <th>Description</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let p of products">
+            <td>{{ p.id }}</td>
+            <td>{{ p.name }}</td>
+            <td>{{ p.price }}</td>
+            <td>{{ p.quantity }}</td>
+            <td>{{p.description}}</td>
+
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
